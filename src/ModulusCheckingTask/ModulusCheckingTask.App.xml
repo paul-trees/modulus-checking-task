@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModulusCheckingTask.App</name>
+    </assembly>
+    <members>
+        <member name="T:ModulusCheckingTask.App.Controllers.AccountDetailsValidationController">
+            <summary>Provides services for validating account details.</summary>
+        </member>
+        <member name="M:ModulusCheckingTask.App.Controllers.AccountDetailsValidationController.IsValid(ModulusCheckingTask.Core.DataTransferObjects.AccountDetailsValidationRequest)">
+            <summary>Validates the provided account details.</summary>
+            <param name="accountDetails"></param>
+            <returns>A response to indicate whether or not the provided account details pass the modulus check.</returns>
+            <response code="204">If the account details successfully pass the modulus check.</response>
+            <response code="400">If the account details fail validation.</response>
+        </member>
+    </members>
+</doc>
